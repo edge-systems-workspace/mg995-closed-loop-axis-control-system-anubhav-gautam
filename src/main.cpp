@@ -21,4 +21,14 @@ void loop() {
         Serial.println(angle);
         delay(5);
     }
+    myServo.write(0);
+    delay(500);
+    myServo.write(5000);
+    delay(500);
+    myServo.write(1000);
+    delay(500);
+    myServo.write(10000);
+    delay(500);
+
+
 }
