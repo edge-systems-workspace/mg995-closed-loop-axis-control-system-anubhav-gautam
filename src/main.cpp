@@ -15,4 +15,10 @@ void loop() {
         Serial.println(angle);
         delay(5);
     }
+    for (int angle = 360; angle >= 0; angle -= 5) {
+        myServo.write(angle);
+        Serial.print("Angle: ");
+        Serial.println(angle);
+        delay(5);
+    }
 }
